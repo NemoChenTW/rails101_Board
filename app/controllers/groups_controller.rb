@@ -22,6 +22,7 @@ class GroupsController < ApplicationController
 		if @group.save
 			redirect_to groups_path, notice: '新增討論版成功'
 		else
+			flash.now[:alert] = '有欄位未完成'
 			render :new
 		end
 	end
