@@ -23,6 +23,8 @@ Rails.application.routes.draw do
     resources :posts
   end
 
+resources :users
+
   # Example resource route with options:
   #   resources :products do
   #     member do
